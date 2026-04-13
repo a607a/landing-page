@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RobotX Link Page | UsRobotX</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --sand: #fff0d6;
+      --card-border: rgba(255, 243, 226, 0.24);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--sand);
+      background:
+        radial-gradient(circle at 50% 12%, rgba(255, 184, 75, 0.38), transparent 20%),
+        radial-gradient(circle at 18% 82%, rgba(255, 95, 162, 0.18), transparent 24%),
+        radial-gradient(circle at 84% 76%, rgba(245, 184, 75, 0.18), transparent 22%),
+        linear-gradient(180deg, #371d3c 0%, #172445 42%, #11192f 100%);
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      pointer-events: none;
+      z-index: 0;
+      border-radius: 999px;
+      filter: blur(6px);
+      opacity: 0.85;
+    }
+
+    body::before {
+      top: 94px;
+      left: calc(50% - 320px);
+      width: 170px;
+      height: 170px;
+      background: radial-gradient(circle, rgba(255, 207, 105, 0.78) 0%, rgba(255, 122, 89, 0.2) 66%, transparent 74%);
+    }
+
+    body::after {
+      top: 198px;
+      right: calc(50% - 320px);
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle, rgba(255, 95, 162, 0.62) 0%, rgba(255, 95, 162, 0.12) 68%, transparent 74%);
+    }
+
+    .lp-wrap {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 52px 18px 42px;
+    }
+    .lp-frame {
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 24px 20px 22px;
+      border-radius: 32px;
+      background: linear-gradient(180deg, rgba(255, 244, 226, 0.08), rgba(255, 244, 226, 0.05));
+      border: 1px solid rgba(255, 243, 226, 0.18);
+      box-shadow: 0 28px 80px rgba(7, 10, 22, 0.28);
+      backdrop-filter: blur(16px);
+    }
+    .lp-header {
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 560px;
+    }
+    .lp-logo {
+      width: 224px;
+      margin: 0 auto 18px;
+    }
+    .lp-logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+    }
+    .lp-title {
+      font-size: 42px;
+      line-height: 0.96;
+      font-weight: 900;
+      color: #fff8ea;
+      letter-spacing: -0.05em;
+      margin-bottom: 10px;
+      text-wrap: balance;
+    }
+    .lp-subtitle {
+      max-width: 430px;
+      margin: 14px auto 8px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: rgba(255, 240, 214, 0.82);
+      text-wrap: balance;
+    }
+    .lp-tagline-site {
+      font-size: 12px;
+      font-weight: 700;
+      color: rgba(255, 240, 214, 0.44);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .lp-cards {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .lp-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: 22px;
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      -webkit-tap-highlight-color: transparent;
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 28px rgba(21, 14, 32, 0.18);
+    }
+    .lp-card:active { transform: scale(0.98); }
+    .lp-card--tiktok {
+      background: linear-gradient(180deg, rgba(39, 226, 217, 0.12), rgba(255, 90, 142, 0.12));
+    }
+    .lp-card--tiktok:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(21, 14, 32, 0.24);
+    }
+    .lp-card--tiktok .lp-card-icon {
+      background: linear-gradient(135deg, #33e2d9, #ff5a8e);
+      box-shadow: none;
+    }
+    .lp-card--instagram {
+      background: linear-gradient(180deg, rgba(255, 179, 71, 0.12), rgba(135, 88, 255, 0.12));
+    }
+    .lp-card--instagram:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(21, 14, 32, 0.24);
+    }
+    .lp-card--instagram .lp-card-icon {
+      background: linear-gradient(135deg, #ffb347, #ff5a8e 55%, #8758ff);
+      box-shadow: none;
+    }
+    .lp-card--trial {
+      background: linear-gradient(180deg, rgba(41, 187, 255, 0.14), rgba(61, 114, 255, 0.12));
+    }
+    .lp-card--trial:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(21, 14, 32, 0.24);
+    }
+    .lp-card--trial .lp-card-icon {
+      background: linear-gradient(135deg, #29bbff, #3d72ff);
+      box-shadow: none;
+    }
+    .lp-card--buy {
+      background: linear-gradient(180deg, rgba(199, 107, 255, 0.14), rgba(126, 62, 255, 0.12));
+    }
+    .lp-card--buy:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(21, 14, 32, 0.24);
+    }
+    .lp-card--buy .lp-card-icon {
+      background: linear-gradient(135deg, #c76bff, #7e3eff);
+      box-shadow: none;
+    }
+    .lp-card--event {
+      background: linear-gradient(180deg, rgba(30, 220, 120, 0.14), rgba(7, 166, 76, 0.12));
+    }
+    .lp-card--event:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(21, 14, 32, 0.24);
+    }
+    .lp-card--event .lp-card-icon {
+      background: linear-gradient(135deg, #1edc78, #07a64c);
+      box-shadow: none;
+    }
+    .lp-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .lp-card-icon svg { width: 22px; height: 22px; fill: #fff; }
+    .lp-card-text { flex: 1; min-width: 0; }
+    .lp-card-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff8ea;
+      margin-bottom: 4px;
+      letter-spacing: 0;
+      line-height: 1.15;
+    }
+    .lp-card-desc {
+      font-size: 13px;
+      color: rgba(255, 240, 214, 0.72);
+      line-height: 1.35;
+      margin-bottom: 4px;
+    }
+    .lp-card-site {
+      font-size: 12px;
+      color: rgba(255, 240, 214, 0.95);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+    .lp-card-arrow {
+      color: rgba(255, 240, 214, 0.4);
+      flex-shrink: 0;
+      margin-left: 6px;
+    }
+    .lp-card-arrow svg { width: 18px; height: 18px; fill: currentColor; }
+    .lp-bottom {
+      margin-top: 22px;
+      text-align: center;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .lp-save-hint {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 240, 214, 0.84);
+      line-height: 1.45;
+      margin-bottom: 10px;
+      text-wrap: balance;
+    }
+    .lp-footer {
+      font-size: 11px;
+      color: rgba(255, 240, 214, 0.38);
+      line-height: 1.7;
+    }
+    @media (max-width: 480px) {
+      body::before {
+        left: -22px;
+        top: 52px;
+        width: 130px;
+        height: 130px;
+      }
+      body::after {
+        right: -6px;
+        top: 154px;
+        width: 110px;
+        height: 110px;
+      }
+      .lp-wrap { padding-top: 40px; }
+      .lp-frame {
+        border-radius: 26px;
+        padding: 20px 14px 18px;
+      }
+      .lp-logo { width: 190px; }
+      .lp-title { font-size: 34px; }
+      .lp-card-title { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="lp-wrap">
+    <div class="lp-frame">
+      <div class="lp-header">
+        <div class="lp-logo">
+          <img src="./assets/usrobotx-logo.png" alt="UsRobotX">
+        </div>
+        <div class="lp-title">Connect with RobotX</div>
+        <div class="lp-subtitle">Explore RobotX, connect with our team, and find the right next step.</div>
+        <div class="lp-tagline-site">Socials, live experiences, products, and partnerships.</div>
+      </div>
+
+      <div class="lp-cards">
+        <a class="lp-card lp-card--tiktok" href="https://www.tiktok.com/@robotxinc" target="_blank" rel="noopener">
+        <div class="lp-card-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.12v12.11a2.89 2.89 0 0 1-2.89 2.89 2.89 2.89 0 0 1 0-5.78c.2 0 .39.02.58.06V8.12a6.01 6.01 0 0 0-.58-.03A6 6 0 1 0 15.82 14V7.95a7.9 7.9 0 0 0 4.64 1.49V6.69h-.87z"/></svg>
+        </div>
+        <div class="lp-card-text">
+          <div class="lp-card-title">Connect on TikTok</div>
+          <div class="lp-card-desc">Follow us and connect with the RobotX team</div>
+          <div class="lp-card-site">@robotxinc</div>
+        </div>
+        <div class="lp-card-arrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        </a>
+
+        <a class="lp-card lp-card--instagram" href="https://www.instagram.com/robotxai/" target="_blank" rel="noopener">
+        <div class="lp-card-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2z"/></svg>
+        </div>
+        <div class="lp-card-text">
+          <div class="lp-card-title">Connect on Instagram</div>
+          <div class="lp-card-desc">Message us and stay in touch with RobotX</div>
+          <div class="lp-card-site">@robotxai</div>
+        </div>
+        <div class="lp-card-arrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        </a>
+
+        <a class="lp-card lp-card--trial" href="https://botsharing.us/" target="_blank" rel="noopener">
+        <div class="lp-card-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.81 6-4.72 7.72L13 17v5h5l-1.22-1.22C19.91 19.07 22 15.76 22 12c0-5.18-3.95-9.45-9-9.95M11 2.05C5.95 2.55 2 6.82 2 12c0 3.76 2.09 7.07 5.22 8.78L6 22h5V2.05M11 13H9V7h2v6m4 0h-2V7h2v6z"/></svg>
+        </div>
+        <div class="lp-card-text">
+          <div class="lp-card-title">Meet RobotX Live</div>
+          <div class="lp-card-desc">Explore live robot experiences and rentals</div>
+          <div class="lp-card-site">botsharing.us</div>
+        </div>
+        <div class="lp-card-arrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        </a>
+
+        <a class="lp-card lp-card--buy" href="https://robotxshop.com/" target="_blank" rel="noopener">
+        <div class="lp-card-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M1 2v2h2l3.6 7.59-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2z"/></svg>
+        </div>
+        <div class="lp-card-text">
+          <div class="lp-card-title">Bring a Robot Home</div>
+          <div class="lp-card-desc">Discover robots for home, gifting, or activations</div>
+          <div class="lp-card-site">robotxshop.com</div>
+        </div>
+        <div class="lp-card-arrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        </a>
+
+        <a class="lp-card lp-card--event" href="tel:6268638444">
+        <div class="lp-card-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <div class="lp-card-text">
+          <div class="lp-card-title">Talk to RobotX</div>
+          <div class="lp-card-desc">Ask about events, activations, education, and partnerships</div>
+          <div class="lp-card-site">626-863-8444</div>
+        </div>
+        <div class="lp-card-arrow">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </div>
+        </a>
+      </div>
+
+      <div class="lp-bottom">
+        <div class="lp-save-hint">Save this page and stay connected with RobotX anytime.</div>
+        <div class="lp-footer">© 2026 UsRobotX<br>usrobotx.com</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
