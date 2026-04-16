@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>CC1 产品培训会议纪要（完整版）</title>
+<style>
+  :root {
+    --primary: #1a365d;
+    --secondary: #2c5282;
+    --accent: #2b6cb0;
+    --light: #f7fafc;
+    --border: #cbd5e0;
+    --text: #1a202c;
+    --muted: #4a5568;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text);
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background: #fff;
+  }
+
+  header {
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 26px;
+    color: var(--primary);
+    margin: 0 0 6px 0;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: var(--primary);
+    border-left: 5px solid var(--primary);
+    padding-left: 12px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: var(--secondary);
+    margin-top: 22px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 4px;
+  }
+
+  h4 {
+    font-size: 14.5px;
+    color: var(--accent);
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+
+  p { margin: 8px 0; }
+
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  li strong { color: var(--primary); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14px;
+  }
+
+  table.meta td:first-child {
+    width: 110px;
+    background: #edf2f7;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  table td, table th {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  table th {
+    background: var(--secondary);
+    color: #fff;
+    font-weight: 600;
+  }
+
+  table.striped tr:nth-child(even) td {
+    background: var(--light);
+  }
+
+  .note {
+    background: #fffaf0;
+    border-left: 4px solid #ed8936;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 14px;
+    color: var(--muted);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .tip {
+    background: #ebf8ff;
+    border-left: 4px solid var(--accent);
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 14px;
+    color: var(--muted);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .next-step {
+    background: #f0fff4;
+    border: 1px solid #9ae6b4;
+    padding: 14px 18px;
+    margin-top: 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #22543d;
+  }
+
+  code { background: #edf2f7; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  /* Print styles — Cmd+P 导出 PDF 会用这些 */
+  @media print {
+    body { padding: 20px; font-size: 12px; }
+    h1 { font-size: 20px; }
+    h2 { font-size: 16px; page-break-after: avoid; }
+    h3 { font-size: 14px; page-break-after: avoid; }
+    table { page-break-inside: avoid; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>CC1 商用 4 合 1 清洁机器人 — 产品培训手册</h1>
+  <div class="subtitle">Intelligent 4-in-1 Commercial Cleaning Robot — Sweep / Scrub / Vacuum / Mop</div>
+</header>
+
+<table class="meta">
+  <tr><td>培训主题</td><td>CC1 产品深度培训（第二款培训会议整理）</td></tr>
+  <tr><td>培训目的</td><td>补齐 CC1 相对 MT1 的差异、模式切换、组件更换、场景取舍与报价策略，为客户现场演示做准备。</td></tr>
+  <tr><td>参与人员</td><td>BorderX 销售 / 技术团队成员</td></tr>
+  <tr><td>涉及产品</td><td>Pudu <strong>CC1</strong>（商用 4 合 1 清洁机器人：扫 / 吸 / 洗 / 拖）</td></tr>
+  <tr><td>关联产品</td><td>MT1（大面积扫吸款）、CG one（纯洗地款）</td></tr>
+  <tr><td>产品首发</td><td>约 2019 年底 / 2020 年推出（Pudu 清洁线的第一款产品）</td></tr>
+</table>
+
+<div class="note">
+  <strong>说明：</strong>本次培训相对 MT1 培训而言，讨论节奏较分散，更多是在对比 MT1 的基础上讲 CC1 的差异。本手册已结合官方规格与现场口述内容做了系统化整理，并标注了哪些是实测口述、哪些是官方参数。
+</div>
+
+<h2>第一部分：CC1 产品定位与核心能力</h2>
+
+<h3>1.1 产品定位：CC1 不是"大而全"，是"小而全能"</h3>
+<ul>
+  <li><strong>核心身份：</strong>4 合 1 通用清洁机器人（扫 / 吸 / 洗 / 拖），靠"一台机器覆盖多种场景"取胜，而不是靠"超大效率"。</li>
+  <li><strong>相对 MT1 的定位：</strong>MT1 打"大面积 + 干式 + 效率"，CC1 打"中小场景 + 多模式 + 能处理湿"。两者是互补关系，不是替代。</li>
+  <li><strong>最适合场景：</strong>
+    <ul>
+      <li>酒店中 corridor（过道窄）、lobby 硬地面、游泳池周边 — 走廊窄、MT1 进不去时上 CC1。</li>
+      <li>需要"干一台、湿一台"全包的中高端酒店。</li>
+      <li>海底捞（Pudu 已部署约 2,000 台）类似的连锁餐饮 — 每天油污 + 水渍混合场景。</li>
+    </ul>
+  </li>
+  <li><strong>反面场景：</strong>大仓库、大商超主通道、大宴会厅 — 这类地方用 MT1 更合适（CC1 清洁宽度窄、效率低，跑起来慢）。</li>
+</ul>
+
+<h3>1.2 CC1 官方规格速览</h3>
+<table class="striped">
+  <tr><th style="width:30%">项目</th><th>CC1 参数</th></tr>
+  <tr><td>清洁方式</td><td>扫 / 吸 / 洗 / 拖 四合一（通过更换组件在模式间切换）</td></tr>
+  <tr><td>清洁效率（官方）</td><td>700 – 1,000 m²/h</td></tr>
+  <tr><td>实际吸尘效率（口述）</td><td>≈ 900 m²/h；一次任务 3 小时 ≈ 2,700 m²（可多班次叠加）</td></tr>
+  <tr><td>续航 — 洗地 (Scrub)</td><td>5 小时</td></tr>
+  <tr><td>续航 — 扫 + 吸 + 拖</td><td>5 小时</td></tr>
+  <tr><td>续航 — 地毯 (Vacuum)</td><td>4 小时</td></tr>
+  <tr><td>续航 — 静音拖地</td><td>9 小时</td></tr>
+  <tr><td>充电时间</td><td>&lt; 3 小时（3 – 3.5 小时）</td></tr>
+  <tr><td>吸力</td><td>17,000 Pa 最大负压</td></tr>
+  <tr><td>清水箱 / 污水箱</td><td>15 L / 15 L</td></tr>
+  <tr><td>定位导航</td><td>PUDU SLAM（激光雷达 + 视觉 + Marker 天花板码）</td></tr>
+  <tr><td>垃圾识别 AI</td><td>仅在硬地面吸尘 / 洗地模式下；地毯模式不识别（官方确认）</td></tr>
+  <tr><td>智能功能</td><td>断点续航（Breakpoint Resume）、组件抬升、自动加水 / 排水 / 充电（配合基站）</td></tr>
+  <tr><td>通过性</td><td>整机更窄，可进 MT1 进不去的过道；酒店 corridor 首选</td></tr>
+</table>
+
+<h3>1.3 核心差异：为什么不能"扫洗同时做"</h3>
+<p>客户最常问："既然是 4 合 1，为什么不能一次扫完 + 洗完？"本次培训给出的标准答案：</p>
+<ul>
+  <li><strong>扫地逻辑：</strong>靠滚刷旋转时的边缘线速度把垃圾"抛"进垃圾盒 —— 刷毛要<strong>硬</strong>、形状要能抛、密度要<strong>疏</strong>。</li>
+  <li><strong>洗地逻辑：</strong>靠刷毛压在地上刷洗，追求最大<strong>接触面积</strong>—— 刷毛要<strong>密</strong>、形状要贴地。</li>
+  <li><strong>物理冲突：</strong>两种刷毛形状 / 密度完全不同，一个刷子不可能同时做好两件事。实测做"前扫后洗"组合方案时：
+    <ul>
+      <li>扫地性能下降一半以上（硬垃圾在滚刷间卡死）。</li>
+      <li>洗地性能也下降（接触面积减少）。</li>
+      <li>双滚刷洗地永远比单滚刷效果好 → 所以选择"扫时双滚刷扫、洗时双滚刷洗"，靠换件切换。</li>
+    </ul>
+  </li>
+  <li><strong>销售话术：</strong>"组合它是一个很好的宣传卖点，但做出来两头都差。我们选择让每个模式做到最好，换件只要一分钟。"</li>
+</ul>
+
+<h3>1.4 湿 / 液体处理能力</h3>
+<ul>
+  <li><strong>CC1 能处理湿垃圾 / 洒水</strong>— 这是 CC1 相对 MT1 的核心差异之一。</li>
+  <li><strong>典型场景：</strong>酒店走廊上红酒杯 / 玻璃水杯被碰洒 —— CC1 的吸水阀 + 污水箱可处理，MT1 则必须避障绕开。</li>
+  <li><strong>话术应用：</strong>酒店客户最怕"遇到湿就得再叫一个人" —— CC1 解决的正是这种随机性。</li>
+  <li><strong>注意：</strong>机器在 scrub 模式下会先放下刷子 + 等风机转起来，再开始移动（逻辑和 sweep 不同）。</li>
+</ul>
+
+<h2>第二部分：三种工作模式与组件切换</h2>
+
+<h3>2.1 三种主要模式</h3>
+<table class="striped">
+  <tr><th style="width:18%">模式</th><th style="width:30%">底盘配件组合</th><th>典型场景</th></tr>
+  <tr>
+    <td><strong>Sweep（扫地）</strong></td>
+    <td>双扫地滚刷 + 边刷 + 干式 filter</td>
+    <td>硬地面碎屑、粉尘、毛发；酒店大堂、corridor 日常清扫</td>
+  </tr>
+  <tr>
+    <td><strong>Scrub（洗地）</strong></td>
+    <td>洗地刷（密毛）+ 吸水阀 + 湿式 filter；无边刷</td>
+    <td>餐厅油污、酒店地面湿渍、pool 周边；最耗水最大吸力</td>
+  </tr>
+  <tr>
+    <td><strong>Vacuum（吸尘）</strong></td>
+    <td>吸尘爬（标配大件 / 选配小件）</td>
+    <td>地毯深吸、酒店走廊地毯、会议室地毯区域</td>
+  </tr>
+</table>
+
+<h3>2.2 吸尘爬（Vacuum Head）两种配件</h3>
+<ul>
+  <li><strong>标配大吸尘爬（全宽）：</strong>覆盖面更广、通用性强 —— 日常出厂默认件。</li>
+  <li><strong>选配小吸尘爬（切了一半）：</strong>吸力更集中更强，但场景更窄 —— 用于地毯深层灰尘场景，效果最好。</li>
+  <li><strong>选件策略：</strong>
+    <ul>
+      <li>酒店客户 → <strong>建议用选配小吸尘爬</strong>（地毯吸得干净，客户直观看到效果）。</li>
+      <li>大面积硬地面吸尘 → 用标配大件（效率 ≥ 效果）。</li>
+    </ul>
+  </li>
+  <li><strong>话术要点：</strong>"小的不是标配，是可选件 —— 它牺牲了覆盖宽度，换来了吸力密度，专门给地毯场景用。"</li>
+</ul>
+
+<h3>2.3 模式切换的标准流程（现场必背）</h3>
+<div class="note"><strong>⚠ 这是 CC1 演示最容易翻车的环节，团队必须亲手反复练习。</strong></div>
+
+<h4>从 Sweep 切到 Scrub 的完整步骤</h4>
+<ul>
+  <li><strong>① 在 APP 里切 Task：</strong>新建或切换到 scrubbing task；系统会自动弹窗提示"请更换以下组件"。</li>
+  <li><strong>② 按提示换件（系统会一步步列出）：</strong>
+    <ul>
+      <li>拆掉边刷（scrubbing 不用边刷）— 按住中间撸一下就下来。</li>
+      <li>拆掉两个扫地滚刷，换成洗地刷。</li>
+      <li>加装吸水阀（squeegee）— 位置在后部。</li>
+      <li>换湿式 filter（干 filter 碰水会报废）。</li>
+    </ul>
+  </li>
+  <li><strong>③ 确认：</strong>在 APP 里点"我已换好"；机器做自检，在位检测传感器确认所有组件就位。</li>
+  <li><strong>④ 启动任务。</strong></li>
+</ul>
+
+<h4>刷子 / 组件安装要诀：怼到底、锁到位</h4>
+<ul>
+  <li>每个刷子底座是<strong>梅花轴 + 导向槽</strong>结构 —— 装的时候要对准，往下压到听到"咔哒"声。</li>
+  <li>装不上的 90% 原因是"没怼到底"，不是坏件。<strong>发现扣不上时，先再往下压一次，再试。</strong></li>
+  <li>滚轮往上拨 → 锁住；整个装好后往下压不动 = 装到位了。</li>
+  <li>CC1 有"弹性可往下压"的设计，装到位后还能被压一小段，这是正常的（表示没卡死）。</li>
+</ul>
+
+<h3>2.4 关键保护：换不对组件机器不会跑</h3>
+<ul>
+  <li><strong>Filter 不换：</strong>机器不启动（干 filter 遇水直接报废）。</li>
+  <li><strong>刷子不换：</strong>可能启动但效果极差 + 刷头磨损异常。</li>
+  <li><strong>吸水阀没装：</strong>scrub 模式启动时报错。</li>
+  <li><strong>价值点：</strong>这套"在位检测 + APP 引导"保护的是客户 —— 就算前台员工临时换班、没培训过，也不会把机器用坏。</li>
+</ul>
+
+<h2>第三部分：场景判断与报价策略</h2>
+
+<h3>3.1 CC1 vs MT1 场景决策树</h3>
+<table class="striped">
+  <tr><th>客户说的场景</th><th>推荐</th><th>理由</th></tr>
+  <tr><td>大宴会厅、仓库主通道、商场大堂（宽）</td><td><strong>MT1</strong></td><td>宽度大、效率高（1,800 m²/h）</td></tr>
+  <tr><td>酒店窄 corridor、客房区走廊</td><td><strong>CC1</strong></td><td>整机更窄、通过性好</td></tr>
+  <tr><td>酒店 lobby 硬地面 + 周围地毯</td><td><strong>CC1</strong></td><td>硬地面 AI 识别 + 地毯吸尘一机搞定</td></tr>
+  <tr><td>餐厅（油污 + 水渍）</td><td><strong>CC1</strong></td><td>4 合 1 覆盖扫 / 洗 / 吸 / 拖</td></tr>
+  <tr><td>泳池周边（湿 + 反光）</td><td><strong>CC1 + CG one</strong></td><td>CC1 主扫，CG one 主洗</td></tr>
+  <tr><td>停车场（大面积、高速车）</td><td><strong>MT1 Pro（多线雷达）</strong></td><td>CC1 不覆盖此场景</td></tr>
+  <tr><td>大客户需要干湿协作</td><td><strong>MT1 + CC1 联动</strong></td><td>通过呼叫器 / 双机协同，MT1 扫完 CC1 湿洗</td></tr>
+</table>
+
+<h3>3.2 CC1 报价体系（USD）</h3>
+<table class="striped">
+  <tr><th style="width:45%">配置</th><th style="width:25%">含 AI 识别</th><th>价格（打包后）</th></tr>
+  <tr><td>CC1 标准版（无 AI 识别）</td><td>否</td><td><strong>$22,000</strong></td></tr>
+  <tr><td>CC1 Pro 版（含 AI 识别 + Spot Cleaning）</td><td>是</td><td><strong>$24,000</strong></td></tr>
+  <tr><td>CC1 Pro 整套方案（机身 + 基站 Station）</td><td>是</td><td><strong>$25,000（24,000 + ~3,200 基站折后打包）</strong></td></tr>
+  <tr><td>基站（Station）单独加购</td><td>—</td><td>目录价 ≈ $2,899；实际打包约 $3,200</td></tr>
+</table>
+
+<h3>3.3 标准版 vs Pro 版 怎么选</h3>
+<ul>
+  <li><strong>标准版（$22k）定位：</strong>"雇合同工，不管干不干净，反正全扫一遍" —— 没有 AI 识别，任务按预定路径走完所有区域。</li>
+  <li><strong>Pro 版（$24k）定位：</strong>多了 AI 识别 + <strong>Spot Cleaning（巡检模式）</strong>—— 哪脏扫哪，效率更高；AI 可识别酱油等液体脏污，自动降速、加水、加大吸力。</li>
+  <li><strong>销售判断：</strong>
+    <ul>
+      <li>客户只看"干净标准一致" → 标准版就够。</li>
+      <li>客户谈"夜间高效巡检 / 按需清洁 / 能看 AI 演示" → 推 Pro，$2k 差价很好打。</li>
+      <li>客户要<strong>完整自动化闭环</strong>（免人工加水倒水） → 必推整套 $25k 含基站。</li>
+    </ul>
+  </li>
+  <li><strong>基站卖点：</strong>自动加清水、自动排污水、自动充电 —— 酒店尤其买账（夜班人手更少，全自动更香）。</li>
+</ul>
+
+<h3>3.4 常见客户关切（CC1 特有）</h3>
+<ul>
+  <li><strong>"扫完湿垃圾咋办？"</strong> → CC1 先检测液体，可切 scrub 模式处理；或配套 MT1 做干净场景，CC1 专门处理湿区域。</li>
+  <li><strong>"你家机器人换刷子太麻烦了。"</strong> → 现场演示一次：切 task → APP 提示 → 1 分钟换好。员工只要跟着 APP 走，不需要专门培训。</li>
+  <li><strong>"为什么不做个家用款？"</strong> → Pudu 的赛道是商用耐操（Durability），家用市场价格战激烈，不是公司方向。告诉客户"我们 80% 收入来自海外商用场景，就是为了耐操"。</li>
+  <li><strong>"能不能扫 + 洗一起做？"</strong> → 用 1.3 节的话术 —— 物理上不可能两头都好，换件 1 分钟解决。</li>
+  <li><strong>"需要天花板贴 Marker 码，客户不乐意贴。"</strong> → Marker 提供全局唯一坐标，每 10 m 校验一次位置；对称结构场景特别需要。但我们也支持天花板<strong>自然特征</strong>定位（不贴码），只是大图 / 对称场景精度略差。跟客户解释"贴码 = 更稳，不贴 = 也能跑"。</li>
+</ul>
+
+<h2>第四部分：现场部署与调试</h2>
+
+<h3>4.1 建图流程（与 MT1 基本一致）</h3>
+<ul>
+  <li><strong>① 建图：</strong>把机器人放在 Home Point，APP 点 Start Mapping，手动推车沿边界走一圈；按主干道推即可，不必把每个死角都推到。</li>
+  <li><strong>② 地图清理：</strong>培训讲师建议的顺序 — <strong>先排除安全风险（虚拟墙、禁区），再擦噪点</strong>；很多人顺序反过来，容易把玻璃 / 花瓶这类障碍物当成噪点擦掉。</li>
+  <li><strong>③ 虚拟墙 / 禁区：</strong>玻璃、镜面、楼梯口、花瓶、B 站（员工休息区 / backstage）这些雷达看不到或不希望进入的区域一定要画出来。</li>
+  <li><strong>④ 划定清洁区域：</strong>按 Sweep / Scrub / Vacuum 不同模式分别划区（同一块地允许多个模式的 task 共存）。</li>
+  <li><strong>⑤ 排程：</strong>设置每日 / 每周自动执行 + 勿扰时段。</li>
+</ul>
+
+<h3>4.2 定位标志物（Marker / 磁条 / 感光棒）</h3>
+<ul>
+  <li><strong>天花板 Marker 码：</strong>
+    <ul>
+      <li>作用：提供全局唯一坐标；每 10 m 自动校验位置。</li>
+      <li>客户隐私：Pudu 对图像做隐私处理（不保留面部 / 人员识别），客户不用担心被监控。</li>
+      <li>对称建筑（方形 lobby、矩形仓库）必须有绝对坐标点，Marker 码是最稳的方式。</li>
+    </ul>
+  </li>
+  <li><strong>磁条（地面）：</strong>用于扶梯口 / 楼梯口物理阻挡 —— 但需要客户同意地面贴磁条，而且部署完贴完还要在 APP 里重新设置一次。</li>
+  <li><strong>感光棒 / 伊克尔加（一次性激光围栏）：</strong>部分客户询问的"放一个设备就不让机器进"方案；目前 Pudu 方案主要靠虚拟墙，硬件围栏属于极少数客户定制场景。</li>
+</ul>
+
+<h3>4.3 跨机型地图共用</h3>
+<ul>
+  <li><strong>同一雷达高度的送餐机器人之间：</strong>可共用地图（不用重建图）。</li>
+  <li><strong>清洁机器人之间（CC1、MT1、CG one）：</strong>不能共用，必须各自重新建一次图 —— 因为雷达高度 / 清洁路径算法不同。</li>
+  <li><strong>3D 激光雷达机型（MT1 Pro 等）：</strong>也支持自己重新扫一遍地图，会自动校正。</li>
+  <li><strong>客户问"我有设备推过一次了，另一台要再推吗？"</strong>答：<strong>只要是清洁机型、雷达高度不同，就要再推一遍</strong>。</li>
+</ul>
+
+<h3>4.4 常见现场问题排查顺序</h3>
+<div class="tip"><strong>发生异常的标准排查顺序（口诀）：</strong>先看盘 → 看 hopper → 看刷子装没装到位 → 看 visual 里的虚拟墙和传感器显示。</div>
+<ul>
+  <li><strong>① 没吸上垃圾 / 漏垃圾：</strong>① 看底盘是否放下；② 看 hopper 有没有满；③ 看刷子有没有装到位（梅花轴、锁扣）。</li>
+  <li><strong>② 机器卡住 / 打转：</strong>打开 APP 的 visual 视图，看虚拟墙、看传感器识别的障碍点（橙色点 = 雷达 + RGB-D 实时障碍，蓝线 = 墙）。</li>
+  <li><strong>③ 切换中文界面：</strong>培训讲师提醒中文菜单里不显示造成垃圾的时间线；需要时切英文界面看原始信息。</li>
+  <li><strong>④ 机器人在某处反复徘徊：</strong>经 visual 确认是误识别后，在该区域设 Sensor Off / 传感器屏蔽区。</li>
+</ul>
+
+<h2>第五部分：演示策略与明日现场指南</h2>
+
+<h3>5.1 演示重点：突出 CC1 的"能处理湿"和"能换模式"</h3>
+<ul>
+  <li><strong>演示一：吸尘效果</strong>
+    <ul>
+      <li>带自备粉末（面粉 / 爽身粉 / 咖啡渣），选客户的地毯区域撒一溜（不要一大片）。</li>
+      <li>放慢速度（speed level 调低），效果最好 —— 慢 = 吸得更干净。</li>
+      <li>清洁后打开 hopper / 污水箱直接给客户看。</li>
+    </ul>
+  </li>
+  <li><strong>演示二：液体处理</strong>
+    <ul>
+      <li>准备一杯水 / 模拟红酒（食用色素兑水），倒在硬地面小范围。</li>
+      <li>切 scrub 任务 → 现场演示"CC1 遇到液体不避障，直接洗 + 吸干"。</li>
+      <li>话术："酒店最怕客人把杯子碰洒，CC1 帮你少叫一次夜班清洁。"</li>
+    </ul>
+  </li>
+  <li><strong>演示三：组件切换</strong>
+    <ul>
+      <li>现场演示 1 分钟换件流程：拆边刷 → 换洗地刷 → 装吸水阀 → 换 filter → APP 确认启动。</li>
+      <li>强调：任何员工看 APP 提示就能换，不需要专业培训。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>5.2 明日现场准备清单</h3>
+<ul>
+  <li><strong>主机：</strong>CC1 本体 + 充电桩（Station）如有则一起带。</li>
+  <li><strong>耗材 / 组件（一定要两套都带）：</strong>扫地滚刷 × 2、洗地刷 × 2、边刷 × 1、吸水阀（标配 + 备用）、干式 filter、湿式 filter、标配吸尘爬、选配小吸尘爬。</li>
+  <li><strong>演示道具：</strong>面粉 / 爽身粉 / 咖啡渣（撒一溜）、纸片碎屑、小瓶水（模拟液体泼洒）。</li>
+  <li><strong>其他：</strong>清洁工作证 / 胸牌、干擦镜布（擦传感器）、手机灯 / 手电（方便看轴位）。</li>
+  <li><strong>运输方式：</strong>抬起底盘锁定万向轮 → 像拖行李箱一样拖动；不要拆分装运（电池包 / 污水箱容易丢）。</li>
+</ul>
+
+<h3>5.3 演示节奏建议（针对酒店客户）</h3>
+<ul>
+  <li><strong>① 先打安全牌：</strong>演示避障 —— 让机器人朝员工走过来，50 cm 内减速绕行。</li>
+  <li><strong>② 再打效果牌：</strong>在酒店 lobby 地毯撒粉末，吸完打开污水箱 / hopper 展示。</li>
+  <li><strong>③ 然后打差异化牌：</strong>演示液体处理 —— 这是 CC1 相对 MT1 / 竞品的核心差异。</li>
+  <li><strong>④ 最后打管理牌：</strong>展示 APP 里的 coverage 报告、AI 识别截图、远程监控界面。</li>
+  <li><strong>⑤ 收尾：</strong>算 ROI —— 酒店清洁工月薪 $2-3k，CC1 机身 $22-25k，替换 1 名全职可 1 年内回本；外加湿洒水、夜班不加人这些隐性成本节省。</li>
+</ul>
+
+<h3>5.4 明天到场的 Dos &amp; Don'ts</h3>
+<ul>
+  <li><strong>Do：</strong>先把客户带到 CC1 的优势场景（窄 corridor、lobby、湿区）；演示前口头确认"吸尘头 / 刷子已放下"。</li>
+  <li><strong>Do：</strong>模式切换慢一点、解释每一步为什么要换（建立专业感）。</li>
+  <li><strong>Do：</strong>如果客户现场真的很干净，主动撒粉 / 洒水；在很干净的地上演示没效果 = 演砸。</li>
+  <li><strong>Don't：</strong>不要让客户带你去大仓库 / 大停车场（那是 MT1 的场景，CC1 效率跑不过）。</li>
+  <li><strong>Don't：</strong>不要让客户问"能不能扫洗同时"— 主动抢在前面解释，避免被牵着走。</li>
+  <li><strong>Don't：</strong>不要只演标准版 —— Pro 版 AI 识别是最直观的"科技感"演示点，$2k 差价很容易升级。</li>
+</ul>
+
+<h2>第六部分：总结与后续行动</h2>
+<ul>
+  <li><strong>产品总结：</strong>CC1 的核心价值是"一台机器覆盖酒店 / 餐饮 / 小场景的扫吸洗拖全流程"。它不追求 MT1 的大效率，追求的是"全能 + 能处理湿 + 窄过道也能进"。</li>
+  <li><strong>培训重点：</strong>
+    <ul>
+      <li>模式切换流程（必反复练习到 1 分钟内完成）。</li>
+      <li>梅花轴 + 导向槽的"怼到底"手感。</li>
+      <li>三种吸尘爬的取舍。</li>
+      <li>$22k / $24k / $25k 三档报价的客户画像。</li>
+    </ul>
+  </li>
+  <li><strong>团队实操任务：</strong>每人亲手完整跑一遍 Sweep → Scrub → Vacuum 的切换；第二次用秒表计时。</li>
+  <li><strong>素材准备：</strong>CC1 产品彩页、ROI 计算模板、已部署案例（海底捞约 2,000 台、酒店走廊场景视频）。</li>
+  <li><strong>长期服务思维（与 MT1 一致）：</strong>硬件 + 耗材订阅 + 服务包 + 远程监控，建立年度续费关系。</li>
+</ul>
+
+<div class="next-step">
+  下一步：团队完成模式切换实操计时 → 准备演示道具（粉末 + 水 + 备用耗材）→ 明天现场先走安全 → 效果 → 差异化（湿）→ ROI 四步节奏。
+</div>
+
+<footer>
+  CC1 商用 4 合 1 清洁机器人 · 产品培训手册 · BorderX
+</footer>
+
+</body>
+</html>
